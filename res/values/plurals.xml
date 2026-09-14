@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dash_maint_duration_days">
+        <item quantity="one">%1$d day</item>
+        <item quantity="other">%1$d days</item>
+    </plurals>
+    <plurals name="dash_maint_duration_months">
+        <item quantity="one">%1$d month</item>
+        <item quantity="other">%1$d months</item>
+    </plurals>
+    <plurals name="dash_maint_duration_weeks">
+        <item quantity="one">%1$d week</item>
+        <item quantity="other">%1$d weeks</item>
+    </plurals>
+    <plurals name="dash_phones">
+        <item quantity="one">%1$d phone</item>
+        <item quantity="other">%1$d phones</item>
+    </plurals>
+    <plurals name="maint_due_in_days">
+        <item quantity="one">Due in %1$d day</item>
+        <item quantity="other">Due in %1$d days</item>
+    </plurals>
+    <plurals name="maint_due_in_months">
+        <item quantity="one">Due in %1$d month</item>
+        <item quantity="other">Due in %1$d months</item>
+    </plurals>
+    <plurals name="maint_due_in_weeks">
+        <item quantity="one">Due in %1$d week</item>
+        <item quantity="other">Due in %1$d weeks</item>
+    </plurals>
+    <plurals name="maint_overdue_by_days">
+        <item quantity="one">Overdue by %1$d day</item>
+        <item quantity="other">Overdue by %1$d days</item>
+    </plurals>
+    <plurals name="maint_overdue_by_months">
+        <item quantity="one">Overdue by %1$d month</item>
+        <item quantity="other">Overdue by %1$d months</item>
+    </plurals>
+    <plurals name="maint_overdue_by_weeks">
+        <item quantity="one">Overdue by %1$d week</item>
+        <item quantity="other">Overdue by %1$d weeks</item>
+    </plurals>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dash_maint_duration_days">
+        <item quantity="other">%1$d ថ្ងៃ</item>
+    </plurals>
+    <plurals name="dash_maint_duration_months">
+        <item quantity="other">%1$d ខែ</item>
+    </plurals>
+    <plurals name="dash_maint_duration_weeks">
+        <item quantity="other">%1$d សប្តាហ៍</item>
+    </plurals>
+    <plurals name="dash_phones">
+        <item quantity="other">ទូរស័ព្ទ %1$d គ្រឿង</item>
+    </plurals>
+    <plurals name="maint_due_in_days">
+        <item quantity="other">ដល់ពេលក្នុង %1$d ថ្ងៃ</item>
+    </plurals>
+    <plurals name="maint_due_in_months">
+        <item quantity="other">ដល់ពេលក្នុង %1$d ខែ</item>
+    </plurals>
+    <plurals name="maint_due_in_weeks">
+        <item quantity="other">ដល់ពេលក្នុង %1$d សប្តាហ៍</item>
+    </plurals>
+    <plurals name="maint_overdue_by_days">
+        <item quantity="other">ហួសកំណត់ %1$d ថ្ងៃ</item>
+    </plurals>
+    <plurals name="maint_overdue_by_months">
+        <item quantity="other">ហួសកំណត់ %1$d ខែ</item>
+    </plurals>
+    <plurals name="maint_overdue_by_weeks">
+        <item quantity="other">ហួសកំណត់ %1$d សប្តាហ៍</item>
+    </plurals>
+</resources>

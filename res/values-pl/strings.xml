@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="call_notification_answer_action">Odbierz</string>
+    <string name="call_notification_answer_video_action">Wideo</string>
+    <string name="call_notification_decline_action">Odrzuć</string>
+    <string name="call_notification_hang_up_action">Rozłącz</string>
+    <string name="call_notification_incoming_text">Połączenie przychodzące</string>
+    <string name="call_notification_ongoing_text">Trwa połączenie</string>
+    <string name="call_notification_screening_text">Filtruję połączenie przychodzące</string>
+    <string name="close_drawer">Zamknij menu nawigacyjne</string>
+    <string name="close_sheet">Zamknij arkusz</string>
+    <string name="default_error_message">Nieprawidłowe dane wejściowe</string>
+    <string name="default_popup_window_title">Wyskakujące okienko</string>
+    <string name="in_progress">W toku</string>
+    <string name="indeterminate">Częściowo zaznaczone</string>
+    <string name="m3c_dialog">Okno</string>
+    <string name="maplibre_attributionErrorNoBrowser">Nie potrafię otworzyć strony, brak przeglądarki internetowej zainstalowanej na urządzeniu.</string>
+    <string name="maplibre_attributionsDialogTitle">MapLibre Maps SDK dla Androida</string>
+    <string name="maplibre_attributionsIconContentDescription">Atrybucja. Aktywuj, żeby pokazać więcej informacji.</string>
+    <string name="maplibre_compassContentDescription">Kompas. Naciśnij, żeby skierować mapę na północ.</string>
+    <string name="maplibre_mapActionDescription">Pokazuje mapę stworzoną za pomocą biblioteki MapLibre. Przesuń mapę za pomocą przeciągnięcia dwoma palcami. Przybliż za pomocą uszczypnięcia dwoma palcami.</string>
+    <string name="maplibre_myLocationViewContentDescription">Widok lokalizacji. Pokazuje twoją pozycję na mapie.</string>
+    <string name="maplibre_offline_error_region_definition_invalid">Wymagany region nie mieści się w granicach świata: %s</string>
+    <string name="navigation_menu">Menu nawigacyjne</string>
+    <string name="not_selected">Nie wybrano</string>
+    <string name="range_end">Koniec zakresu</string>
+    <string name="range_start">Początek zakresu</string>
+    <string name="selected">Wybrano</string>
+    <string name="state_empty">Puste</string>
+    <string name="state_off">Wyłączono</string>
+    <string name="state_on">Włączono</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="switch_role">Przełącznik</string>
+    <string name="tab">Karta</string>
+    <string name="template_percent">%1$d procent.</string>
+</resources>

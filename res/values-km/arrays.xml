@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="plan_weekday_short">
+        <item>អាទិត្យ</item>
+        <item>ច័ន្ទ</item>
+        <item>អង្គារ</item>
+        <item>ពុធ</item>
+        <item>ព្រហស្បតិ៍</item>
+        <item>សុក្រ</item>
+        <item>សៅរ៍</item>
+    </string-array>
+</resources>

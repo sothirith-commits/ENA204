@@ -1,0 +1,244 @@
+.class public final LN2/P1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lkotlinx/serialization/g;
+.end annotation
+
+
+# static fields
+.field public static final Companion:Lcom/eznav/engine/vehicle/WriteEnvelopeSpec$ValueSet$Companion;
+
+.field public static final d:[Ln3/f;
+
+
+# instance fields
+.field public final a:I
+
+.field public final b:I
+
+.field public final c:Ljava/util/Set;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 4
+
+    const/4 v0, 0x0
+
+    new-instance v1, Lcom/eznav/engine/vehicle/WriteEnvelopeSpec$ValueSet$Companion;
+
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+
+    sput-object v1, LN2/P1;->Companion:Lcom/eznav/engine/vehicle/WriteEnvelopeSpec$ValueSet$Companion;
+
+    sget-object v1, Ln3/h;->PUBLICATION:Ln3/h;
+
+    new-instance v2, LN2/c1;
+
+    const/16 v3, 0xd
+
+    invoke-direct {v2, v3}, LN2/c1;-><init>(I)V
+
+    invoke-static {v1, v2}, Le3/a;->Z(Ln3/h;LA3/a;)Ln3/f;
+
+    move-result-object v1
+
+    const/4 v2, 0x3
+
+    new-array v2, v2, [Ln3/f;
+
+    const/4 v3, 0x0
+
+    aput-object v0, v2, v3
+
+    const/4 v3, 0x1
+
+    aput-object v0, v2, v3
+
+    const/4 v0, 0x2
+
+    aput-object v1, v2, v0
+
+    sput-object v2, LN2/P1;->d:[Ln3/f;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(IIILjava/util/Set;)V
+    .locals 2
+
+    and-int/lit8 v0, p1, 0x7
+
+    const/4 v1, 0x7
+
+    if-ne v1, v0, :cond_0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput p2, p0, LN2/P1;->a:I
+
+    iput p3, p0, LN2/P1;->b:I
+
+    iput-object p4, p0, LN2/P1;->c:Ljava/util/Set;
+
+    return-void
+
+    :cond_0
+    sget-object p2, LN2/O1;->a:LN2/O1;
+
+    invoke-virtual {p2}, LN2/O1;->d()LV3/g;
+
+    move-result-object p2
+
+    invoke-static {p1, v1, p2}, LX3/b0;->k(IILV3/g;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public constructor <init>(IILjava/util/SortedSet;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput p1, p0, LN2/P1;->a:I
+
+    iput p2, p0, LN2/P1;->b:I
+
+    iput-object p3, p0, LN2/P1;->c:Ljava/util/Set;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
+
+    :cond_0
+    instance-of v1, p1, LN2/P1;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    return v2
+
+    :cond_1
+    check-cast p1, LN2/P1;
+
+    iget v1, p1, LN2/P1;->a:I
+
+    iget v3, p0, LN2/P1;->a:I
+
+    if-eq v3, v1, :cond_2
+
+    return v2
+
+    :cond_2
+    iget v1, p0, LN2/P1;->b:I
+
+    iget v3, p1, LN2/P1;->b:I
+
+    if-eq v1, v3, :cond_3
+
+    return v2
+
+    :cond_3
+    iget-object v1, p0, LN2/P1;->c:Ljava/util/Set;
+
+    iget-object p1, p1, LN2/P1;->c:Ljava/util/Set;
+
+    invoke-static {v1, p1}, LB3/s;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_4
+
+    return v2
+
+    :cond_4
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    iget v0, p0, LN2/P1;->a:I
+
+    invoke-static {v0}, Ljava/lang/Integer;->hashCode(I)I
+
+    move-result v0
+
+    const/16 v1, 0x1f
+
+    mul-int/2addr v0, v1
+
+    iget v2, p0, LN2/P1;->b:I
+
+    invoke-static {v2, v0, v1}, Lc2/M9;->d(III)I
+
+    move-result v0
+
+    iget-object v1, p0, LN2/P1;->c:Ljava/util/Set;
+
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    move-result v1
+
+    add-int/2addr v1, v0
+
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "ValueSet(propId="
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget v1, p0, LN2/P1;->a:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, ", area="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, LN2/P1;->b:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, ", values="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, LN2/P1;->c:Ljava/util/Set;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ")"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

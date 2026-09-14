@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Resources the shrinker cannot see, because nothing references them from code or XML by id.
+
+  R8 phase 3 (docs/decisions/2026-08-23-apk-obfuscation-r8.md). `shrinkResources` deletes any
+  resource it cannot find a reference to. Everything listed here IS referenced — just by NAME, at
+  runtime, through Resources.getIdentifier — which is invisible to static analysis. Deleting one of
+  these does not crash: the lookup returns id 0 and the driver is shown the raw key
+  ("member_link_failed") instead of a sentence. A silent downgrade to gibberish, in the error path,
+  which is exactly where nobody looks until a customer complains.
+
+  Source: LinkSheet.kt's resolveReasonText/resolveReasonTextKm resolve LinkFlowState.Failed.reasonKey
+  and SharePairState.Failed.reasonKey. Those keys are plain strings produced in MainActivity and
+  ShareFlow, and the kdoc is explicit that a key may name a string from ANY module. Globs rather
+  than an exact list for that reason — a new failure reason must not need an edit here to display.
+
+  tools:shrinkMode="strict" is deliberately NOT set: default (safe) mode already keeps anything
+  reachable from getIdentifier-adjacent heuristics, and strict mode would remove that safety net for
+  no gain we need.
+-->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="
+        @string/member_link_*,
+        @string/member_err_*,
+        @string/share_err_*,
+        @string/share_pair_*,
+        @string/share_full,
+        @mipmap/ic_launcher,
+        @mipmap/ic_launcher_round,
+        @drawable/ic_launcher_foreground,
+        @drawable/ic_launcher_background" />
